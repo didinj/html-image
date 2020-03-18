@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>HTML Image</h1>
+    </header>
+
+    <div>
+
+        <!-- 1. Put an Image -->
+        <h2>Put an Image on a Web Page</h2>
+        <p>Syntax:<br> <span>&lt;</span>img src="twitter.png"<span>&gt;</span></p>
+
+        <img src="twitter.png">
+
+
+        <div>
+            <h2>Alt Attribute</h2>
+
+            <p>Use the "alt" attribute to provide an alternate text for an image. This attribute will show text if your
+                connection to slow or, if a browser cannot find an image.</p>
+            <p>Syntax:<br> <span>&lt;</span>img src="facebook.png" alt="Facebook"<span>&gt;</span></p>
+
+            <img src="facebook.png" alt="Facebook">
+        </div>
+
+        <!-- style, width & height attribute -->
+
+        <div>
+            <h2>Width and Height or Style Attribute</h2>
+
+            <h3>Width and Height Attribute</h3>
+            <p>Syntax: <br> <span>&lt;</span>img src="flower.jpg" alt="Flower" width="220px" height="140px"<span>&gt;</span></p>
+
+            <img src="flower.jpg" alt="flower" width="220px" height="140px">
+
+
+            <h3>Style Attribute</h3>
+            <p>Syntax: <br> <span>&lt;</span>img src="beach.jpg" alt="Beach" style="width:220px;
+                height:140px"<span>&gt;</span></p>
+
+            <img src="beach.jpg" alt="Beach" style="width:220px; height:140px">
+
+
+        </div>
+
+        <!-- Images in Another Folder or Server -->
+        <div>
+            <h2>Images in Another Folder or Server</h2>
+
+            <h3>In Another Folder</h3>
+            <p>Syntax:<br> <span>&lt;</span>img src="img/smartphone.jpg" alt="Smartphone" width="200px"
+                height="100px"<span>&gt;</span></p>
+
+            <img src="img/smartphone.jpg" alt="Smartphone" width="200px" height="100px">
+
+            <h3>In Another Server</h3>
+            <p>Syntax:<br> <span>&lt;</span>img
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="Google"<span>&gt;</span></p>
+
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="Google">
+        </div>
+
+        <!-- Animated Images -->
+        <div>
+            <h2> Animated Images</h2>
+            <p>Syntax:<br> <span>&lt;</span>img src="google.gif" alt="Google" width="400px"
+                height="250px"<span>&gt;</span></p>
+
+            <img src="google.gif" alt="Google" width="400px" height="250px">
+        </div>
+
+        <!-- Images as A Link -->
+        <div>
+            <h2>Image as a Link</h2>
+            <p>Syntax:<br> 
+                <span>&lt;</span>a href="https://google.com"<span>&gt;</span><br>
+                <span>&lt;</span>img src="google.gif" alt="Google"
+                width="400px"
+                height="250px"<span>&gt;</span><br>
+                <span>&lt;</span>/a<span>&gt;</span></p>
+
+            <a href="https://google.com">
+            <img src="google.gif" alt="Google" width="400px" height="250px">
+            </a>
+        </div>
+
+        <!-- Image Floating -->
+        <div>
+            <h2>Image Floating</h2>
+            <p>Syntax:<br>
+                <span>&lt;</span>p<span>&gt;</span>
+
+                <span>&lt;</span>img src="Smiley.svg" alt="Google" style="float:left;width: 30px; height:
+                30px"<span>&gt;</span>
+
+                <span>&lt;</span>/p<span>&gt;</span>
+            </p>
+
+                <p><img src="Smiley.svg" alt="Smiley" style="float:right;width: 30px; height: 30px">
+                    Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Eos perspiciatis, culpa dolores laborum rem at adipisci harum
+                    iure assumenda aliquam animi esse. Voluptates hic possimus obcaecati fugiat voluptate cum dolore
+                    tempora, architecto praesentium veritatis iste eligendi repellat qui fuga consequuntur.
+                </p>
+
+                <p><img src="Smiley.svg" alt="Smiley" style="float:left;width: 30px; height: 30px">
+                    Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Eos perspiciatis, culpa dolores laborum rem
+                    at adipisci harum iure assumenda aliquam animi esse. Voluptates hic possimus obcaecati fugiat
+                    voluptate cum dolore tempora, architecto praesentium veritatis iste eligendi repellat qui fuga
+                    consequuntur.
+                    
+                </p>
+        </div>
+
+    </div>
+
+    <header>
+        <h1>Image Maps</h1>
+    </header>
+
+    <div>
+
+        <!-- 2. Image Maps -->
+
+        <h2>Image Maps</h2>
+        <p>Syntax:</p>
+        <img src="img/imagemaps.png" alt="Image Maps">
+
+        <p>Click on the facebook icon or the instagram icon to go to a new page:</p>
+
+        <img src="pexels.jpeg" alt="Pexels" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="204,162,227,140" alt="Facebook" href="https://facebook.com" target="_blank">
+            <area shape="rect" coords="236,154,260,130" alt="Instagram" href="https://instagram.com" target="_blank">
+        </map>
+    </div>
+
+    <header>
+        <h1>Background Images</h1>
+    </header>
+
+    <div style="background-image: url('flower.jpg');">
+
+        <!-- 3. Background Image -->
+
+        <h2 style="color: white">Background Images</h2>
+        <p style="color: white">Syntax:<br>
+
+        <span>&lt;</span>div style="background-image: url('flower.jpg');"<span>&gt;</span>
+    
+        </p>
+
+        <p style="color: white">You can add a background image in "div" or "body" element with "style" attribute.</p>
+        
+    </div>
+
+    <div style="background-image: url('emoticon.jpg'); background-repeat: no-repeat;">
+
+        <h2>Background Images Repeat</h2>
+
+        <p>You can add a background image in "div" or "body" element with "style" attribute.</p>
+    </div>
+
+    <header>
+        <h1>Picture Element</h1>
+    </header>
+
+    <div>
+
+        <!-- 4. Picture Element -->
+
+        <h2>Picture Element</h2>
+        <p>Resize the screen size to see what happens</p>
+
+        <picture>
+            <source media="(min-width: 650px)" srcset="flower.jpg">
+            <source media="(min-width: 465px)" srcset="beach.jpg">
+            <img src="pexels.jpeg">
+        </picture>
+
+    </div>
+
+</body>
+</html>
